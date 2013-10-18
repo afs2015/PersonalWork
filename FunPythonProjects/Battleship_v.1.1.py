@@ -3,6 +3,7 @@
 # Author: Andrew Selzer
 # Purpose: A basic version of the game battleship
 # Version 1.0: Basic implmentation of battleship
+# Version 1.1: Added error handling and returns coordinates of ship upon game over.
 
 # Imports
 from random import randint
@@ -75,6 +76,6 @@ for turn in range(5):
             print ("You missed my battleship! \n")
             board[guess_row][guess_col] = "X"
         if turn == 4:
-            print ("Game Over \n")
+            print ("Game Over, the ship was at row %s and column %d \n" % (ship_row, ship_col))
         else:
             print_board(board)
