@@ -11,5 +11,8 @@ def cubedRoot(num):
 		ans += 1
 	if (ans**3 != abs(num)):
 		return str(num) + " is not a perfect cube"
+	elif (num < 0):
+		ans = -ans
+		return "The cubed root is " + str(ans)
 	else:
 		return "The cubed root is " + str(ans)
