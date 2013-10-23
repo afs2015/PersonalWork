@@ -7,8 +7,9 @@ print ("Type cubedRoot(number) to use this program.")
 
 def cubedRoot(num):
 	ans = 0
-	while (ans**3 < abs(num)):
-		ans += 1
+	for ans in range(0, abs(num)+1):
+		if ans**3 == abs(num):
+			break
 	if (ans**3 != abs(num)):
 		return str(num) + " is not a perfect cube"
 	elif (num < 0):
