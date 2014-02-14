@@ -1,4 +1,4 @@
 SmallPythonProjects
 ============
 
-This contains code for personal projects.
+This contains code for small personal projects.
