@@ -1,7 +1,7 @@
 import random
 
 # Read a file
-with open("sort.txt.", "r+") as fo:
+with open("sort.txt", "r+") as fo:
 	text = fo.readlines()
 
 def list_append_from_file(file):
@@ -18,7 +18,8 @@ entries = []
 
 list_append_from_file(text)
 
-#print winner
+# print winner
 print(random.choice(entries))
 
+# close file
 fo.close()
